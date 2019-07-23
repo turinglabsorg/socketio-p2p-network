@@ -36,7 +36,8 @@ async function init () {
         });
         socket.on('message', function (data) {
         socket.emit('response', 'pong')
-        log('Received message: ' + data)
+            log('Received message: ' + data)
+            log('Sending response: pong')
         });
     }
 }
